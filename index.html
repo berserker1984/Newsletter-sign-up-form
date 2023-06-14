@@ -27,19 +27,23 @@
 
          <!-- Success message start -->
 
-        <div class="sucesso">
-          Thanks for subscribing!
+        <div id="caixa-sucesso" class="esconder ">
+          <div class="caixa-conteudo-sucesso">
+            <img src="./assets/images/icon-success2.svg" alt="">
 
-          A confirmation email has been sent to ash@loremcompany.com. 
-          Please open it and click the button inside to confirm your subscription.
+            <h1>Thanks for subscribing!</h1>
+
+            <p>A confirmation email has been sent to <strong></strong>. 
+            Please open it and click the button inside to confirm your subscription.</p>
  
-          Dismiss message
+            <button type="button" id="btn2">Dismiss message</button>
+          </div>
         </div>
 
          <!-- Success message end -->
 
 
-        <div class="row">
+        <div id="primeiro-conteudo" class="row">
           
           <div class="col-6 imagem-mobile">
             <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
@@ -59,12 +63,20 @@
                   <li>And much more!</li>
                 </ul>  
                 <form action="">
-                  <label for="">Email address</label>
+                  <div class="caixa-label">
+                    <div class="esquerda" >
+                      <label for="">Email address</label>
+                    </div>
+                    <div id="msg-erro" class="esconder">
+                      <label for="">Valid email required</label>
+                    </div>
+                  </div>
+                  
 
-                  <input type="text" placeholder="email@company.com">
+                  <input  class="input-email" id="email-digitado" type="email"   placeholder="email@company.com" >
                   
                   <div>
-                    <button>Subscribe to monthly newsletter</button>
+                    <button type="button" id="btn">Subscribe to monthly newsletter</button>
                   </div>
                 </form>      
               </div>
@@ -91,7 +103,7 @@
   </div>
  
  
-  
+  <script src="code.js" ></script>
   
 </body>
 </html>

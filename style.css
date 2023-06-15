@@ -16,6 +16,8 @@
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
+
+
 /* CELULARES MENORES*/ 
         
 @media (min-width: 320px) and (max-width: 568px) {
@@ -30,7 +32,8 @@
         width: 100vw;
         height: 100vh;
         padding: 0;
-        margin: 0;        
+        margin: 0;  
+              
     }
 
     main {  
@@ -39,7 +42,7 @@
         width: auto;
         height: auto;  
         padding: 0;
-        margin: 0;       
+        
          
     }
 
@@ -134,10 +137,13 @@
     
 
    .formulario{
-       width: auto;
+        display: grid;
+        place-items: center;
+       width: 100%;
        height: auto; 
        padding: 40px; 
-       margin: 0;
+       
+       
              
     }
 
@@ -260,6 +266,7 @@
         padding: 0;
         margin: 0; 
         
+        
    }
 
    .imagem-mobile{    
@@ -269,10 +276,12 @@
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         width: 100%;
+        height: auto;
         margin: 0 auto;
         padding: 0;
         margin-top: -20px;
         padding-top: 0;
+        
         
         
 }
@@ -294,7 +303,7 @@
 
 /* CELULARES */ 
         
-@media (min-width: 340px) and (max-width: 767px) {
+@media (min-width: 340px) and (max-width: 779px) {
    
     body{        
         background-color: white;       
@@ -306,21 +315,19 @@
         width: 100vw;
         height: 100vh;
         padding: 0;
-        margin: 0;        
+        margin: 0; 
+        background-color: white;       
     }
 
     main {  
         display: grid;
         place-items: center;  
-        width: auto;
+        width: 100vw;
         height: auto;  
         padding: 0;
-        margin: 0;       
+        margin: 0;   
+            
          
-    }
-
-    footer {
-        margin-top: -30px;
     }
 
     .esconder{
@@ -410,8 +417,7 @@
     
 
    .formulario{
-       width: auto;
-       height: auto; 
+    
        padding: 40px; 
        margin: 0;
              
@@ -425,8 +431,6 @@
    .formulario h2{
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
-        margin-top: -20px;
-        
    }
 
    .formulario p {
@@ -545,9 +549,272 @@
         width: 100%;
         margin: 0 auto;
         padding: 0;
-        margin-top: -20px;
-        padding-top: 0;
         
+}
+
+   .imagem img{
+       display: block;
+       width: 100%;
+       margin: 0;
+       padding: 0;
+              
+    }
+    
+
+     
+    
+}
+
+/* CELULARES 2 */ 
+        
+@media (min-width: 375px) and (max-width: 812px) {
+   
+    body{        
+        background-color: white;       
+    }
+
+    .container{
+        display: grid;
+        place-items: top;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;   
+             
+    }
+
+    main {  
+        display: grid;
+        place-items: center;  
+        height: 100%;  
+        padding: 0;
+        margin: 0;  
+        background-color: white;  
+          
+         
+    }
+
+    .esconder{
+        display: none;
+    }
+
+    .sucesso{
+        display: grid;
+        place-items: center; 
+        margin: 0 auto;
+        background-color: white;
+        border: 1px solid none;
+        border-radius: 50px;
+        width: 100%; 
+        height: auto;
+    }
+
+    .sucesso button{
+        border: 1px solid none;
+        border-radius: 5px;        
+        padding: 5px;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        font-size: 10px;   
+        width: 100%;
+        height: 40px;
+        margin-bottom: 0;
+        padding-bottom: 0;   
+   }
+
+   .sucesso button:hover{
+    background-image: linear-gradient(to right, #e78686, #ec807e, #f17976, #f6726d, #fa6b64, #fb6b60, #fd6a5c, #fe6a58, #fd7059, #fd765b, #fc7c5d, #fb815f);    
+    border-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+   }
+
+    .caixa-conteudo-sucesso{        
+        display: grid;
+        place-items: left;
+        height: 100%;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+
+    
+
+
+    .caixa-conteudo-sucesso img{
+        margin-bottom: 20px;
+        
+    }
+
+    .caixa-conteudo-sucesso h1{
+        margin-bottom: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        
+    }
+
+    .caixa-conteudo-sucesso p{
+        margin-bottom: 60%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        
+    }
+
+    .caixa-conteudo-sucesso button{
+        border: 1px solid none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 5px;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        font-size: 16px;   
+        width: 100%;  
+        height: 60px; 
+   }
+
+    
+
+   .formulario{
+       display: grid;
+       place-items: center; 
+       width: auto;
+       padding: 40px; 
+       margin: 0;
+             
+    }
+
+    .formulario button:hover{
+        background-image: linear-gradient(to right, #e78686, #ec807e, #f17976, #f6726d, #fa6b64, #fb6b60, #fd6a5c, #fe6a58, #fd7059, #fd765b, #fc7c5d, #fb815f);    
+        border-color: hsl(4, 100%, 67%);
+       }
+
+   .formulario h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+   }
+
+   .formulario p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+   }
+
+   .formulario label{
+        font-weight: 700;
+        font-size: 10px;
+    
+   }
+
+
+   .caixa-label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   
+   .error {   
+    color: red;   
+   }
+
+   .input-email{
+        border: 1px solid hsl(231, 7%, 60%);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 10px;  
+        width: 100%;
+        padding-left: 20px;  
+        height: 40px;
+   }
+
+
+
+   .formulario input{
+        border: 1px solid hsl(231, 7%, 60%);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 12px;  
+        width: 100%;
+        padding-left: 20px;  
+   }
+
+   .formulario button{
+        border: 1px solid none;
+        border-radius: 5px;        
+        padding: 5px;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        font-size: 10px;   
+        width: 100%;
+        height: 40px;
+        margin-bottom: 0;
+        padding-bottom: 0;   
+   }
+
+   .formulario button:hover{
+    background-color: hsl(4, 100%, 67%);
+   }
+
+   .input-email-erro{
+    border: 1px solid red;     
+    background-color: hsl(4, 100%, 95%); 
+    color: red;   
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 10px;  
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;  
+}
+
+.input-email-erro::placeholder{
+   
+    color:  hsl(4, 100%, 65%);
+    
+    
+}
+
+
+
+   
+  ul li{
+        background: url('./assets/images/icon-list.svg') no-repeat left top;
+        padding: 0px 10px 0px 25px;
+        list-style: none;
+        vertical-align: middle;
+        font-size: 15px;
+        margin-left: -40px;
+  }
+
+   .imagem{    
+        display: none;
+        flex-direction: column;
+        justify-content: center;    
+        border: 1px solid none;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding: 0;
+        margin: 0; 
+        
+   }
+
+   .imagem-mobile{    
+        display: grid;
+        place-content: center; 
+        border: 1px solid none;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
         
 }
 
@@ -569,7 +836,7 @@
 
 /* TABLETS */ 
         
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 780px) and (max-width: 1025px) {
    
     
     body{
@@ -590,7 +857,6 @@
     main {
         width: auto;
         height: 500px;   
-        background-color: white;
         
         
          
@@ -679,14 +945,13 @@
    .formulario{
         display: grid;
         place-items: center;
-      
-        
+        padding-left: 30px;
+        padding-right: 30px;
         background-color: white;
         border: 1px solid none;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         height: 500px;
-        margin: 0;
         
         
         
@@ -809,7 +1074,6 @@
         background-color:hsl(234, 29%, 20%);
         
         
-        
     }
 
     .container{
@@ -818,15 +1082,15 @@
         height: 100vh;
         width: 100vw;
         
-        
     }
 
     main {
-        width: auto;
-        height: auto;  
+        width: 600px;
+        height: 400px;   
+        
+        
+         
     }
-
-   
 
     .esconder{
         display: none;
@@ -857,9 +1121,9 @@
    }
 
    .sucesso button:hover{
-        background-image: linear-gradient(to right, #e78686, #ec807e, #f17976, #f6726d, #fa6b64, #fb6b60, #fd6a5c, #fe6a58, #fd7059, #fd765b, #fc7c5d, #fb815f);    
-        border-color: hsl(4, 100%, 67%);
-        cursor: pointer;
+    background-image: linear-gradient(to right, #e78686, #ec807e, #f17976, #f6726d, #fa6b64, #fb6b60, #fd6a5c, #fe6a58, #fd7059, #fd765b, #fc7c5d, #fb815f);    
+    border-color: hsl(4, 100%, 67%);
+    cursor: pointer;
    }
 
 
@@ -914,8 +1178,7 @@
         background-color: white;
         border: 1px solid none;
         border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px; 
-        
+        border-bottom-left-radius: 10px;       
     } 
 
    .formulario h2{
@@ -958,6 +1221,7 @@
    .formulario button{
         border: 1px solid none;
         border-radius: 5px;
+        margin-bottom: 10px;
         padding: 5px;
         background-color: hsl(234, 29%, 20%);
         color: hsl(0, 0%, 100%);
@@ -972,12 +1236,12 @@
     background-color: hsl(4, 100%, 95%); 
     color: red;   
     border-radius: 5px;
+    margin-bottom: 10px;
     padding: 5px;
     font-size: 10px;  
     width: 100%;
     height: 40px;
-    padding-left: 20px; 
-    margin-bottom: 10px 
+    padding-left: 20px;  
 }
 
 .input-email-erro::placeholder{
@@ -1039,7 +1303,6 @@
         border-bottom-right-radius: 25px;
         width: 100%;
     }
-    
     
 
 

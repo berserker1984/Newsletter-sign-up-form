@@ -277,12 +277,20 @@
         height: auto;
         margin: 0 auto;
         padding: 0;
-        margin-top: -20px;
         padding-top: 0;
-        
-        
+        position: relative;
+        top: 0;     
         
 }
+
+    .imagem-cel{
+        position: relative;
+        top: 0;
+        display: block;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
 
    .imagem img{
        display: block;
